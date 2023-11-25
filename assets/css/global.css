@@ -9,15 +9,19 @@ body {
 
 .content {
     padding: 1rem;
-    background-color: #f6f8fc;
-    height: 100vh;
+    background-image: url(../img/background.jpg);    
+    background-size: 100%;
+    color: #2f2b2b;
     width: 100vw;
+    text-align: center;
 }
 
 @media screen and (min-width: 992px) {
     .content {
         max-width: 992px;
-        margin: 0;
+        height: 99vh;
+        margin: auto;    
+        overflow-y: scroll;
     }
 }
 
@@ -36,7 +40,9 @@ body {
 }
 
 @media screen and (min-width: 992px) {
-    .pokemon {
+    .pokemons {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
+
+

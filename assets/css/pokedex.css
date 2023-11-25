@@ -1,6 +1,5 @@
 .pokemons {
     display: grid;
-    grid-template-columns: 1fr;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -22,7 +21,7 @@
     background-color: #678fee;
 }
 
-.eletric {
+.electric {
     background-color: #f7cf2e;
 }
 
@@ -85,10 +84,13 @@
     margin: .5rem;
     padding: 1rem;
     color: #fff;
-    border-radius: 1rem;
-    
+    border-radius: 1rem;    
 }
 
+.pokemon:hover {
+    transform: scale(1.05);
+    transition: all .2s ease-in-out;
+}
 
 
 .pokemon .number {
@@ -142,10 +144,13 @@
 }
 
 .pagination button {
+    padding: 0.25rem .5rem;
+    margin: .25rem 0;
+    font-size: .8rem;
     color: #fff;
     background-color: #6c79db;
     border: none;
-    border-radius: 1rem;
-    padding: 1rem;
-
+    border-radius: 1rem;  
+    cursor: pointer;
+    width: 80%;  
 }
